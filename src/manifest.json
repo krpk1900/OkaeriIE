@@ -1,0 +1,18 @@
+{
+	"name": "おかえりIE",
+	"manifest_version": 2,
+	"version": "0.0.1",
+	"content_scripts": [
+    {
+      "matches": [ "https://twitter.com//*" ],
+      "js": [
+        "js/chunk-vendors.js",
+        "js/app.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://twitter.com//*"
+  ]
+}

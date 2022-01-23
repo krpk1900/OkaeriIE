@@ -1,0 +1,28 @@
+{
+  "name": "okaeriie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "OkaeriIE.js",
+  "scripts": {
+    "build": "vue-cli-service build src/js/main.js",
+    "release": "npm run build && cp src/manifest.json dist/ && rm dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krpk1900/OkaeriIE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krpk1900/OkaeriIE/issues"
+  },
+  "homepage": "https://github.com/krpk1900/OkaeriIE#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.15",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
