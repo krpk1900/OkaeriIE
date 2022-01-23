@@ -4,15 +4,26 @@
 	"version": "0.0.1",
 	"content_scripts": [
     {
-      "matches": [ "https://twitter.com//*" ],
+      "matches": [
+        "https://www.google.co.jp/*",
+        "https://twitter.com//*"
+      ],
       "js": [
         "js/chunk-vendors.js",
-        "js/app.js"
+        "js/app.js",
+        "js/fontawesome.js"
+      ],
+      "css": [
+        "css/all.min.css"
       ]
     }
   ],
+  "web_accessible_resources": [
+    "fonts/*"
+  ],
   "permissions": [
     "activeTab",
+    "https://www.google.co.jp/*",
     "https://twitter.com//*"
   ]
 }

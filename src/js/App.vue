@@ -1,16 +1,18 @@
 <template>
   <div id="myapp">
-    <Hello />
+    <vue-star animate="animated rubberBand" color="#F05654">
+      <i slot="icon" class="fa fa-heart"></i>
+    </vue-star>
   </div>
 </template>
 
 <script>
-import Hello from "./components/Hello.vue";
+import VueStar from 'vue-star'
 
 export default {
   name: "app",
   components: {
-    Hello
+    VueStar
   }
 };
 </script>

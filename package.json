@@ -5,7 +5,7 @@
   "main": "OkaeriIE.js",
   "scripts": {
     "build": "vue-cli-service build src/js/main.js",
-    "release": "npm run build && cp src/manifest.json dist/ && rm dist/index.html"
+    "release": "npm run build && cp src/manifest.json dist/ && mkdir -p dist/css && cp src/css/all.min.css dist/css/ && cp src/js/fontawesome.js dist/js/ && rm dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/krpk1900/OkaeriIE#readme",
   "dependencies": {
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-star": "^0.0.4"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.5.15",
