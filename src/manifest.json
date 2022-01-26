@@ -6,7 +6,7 @@
     {
       "matches": [
         "https://www.google.co.jp/*",
-        "https://twitter.com//*"
+        "https://twitter.com/*"
       ],
       "js": [
         "js/chunk-vendors.js",
@@ -24,6 +24,6 @@
   "permissions": [
     "activeTab",
     "https://www.google.co.jp/*",
-    "https://twitter.com//*"
+    "https://twitter.com/*"
   ]
 }
