@@ -1,12 +1,11 @@
 {
-	"name": "おかえりIE",
+	"name": "テスト",
 	"manifest_version": 2,
 	"version": "0.0.1",
 	"content_scripts": [
     {
       "matches": [
-        "https://www.google.co.jp/*",
-        "https://twitter.com/*"
+        "https://www.google.co.jp/*"
       ],
       "js": [
         "js/chunk-vendors.js",
@@ -23,7 +22,6 @@
   ],
   "permissions": [
     "activeTab",
-    "https://www.google.co.jp/*",
-    "https://twitter.com/*"
+    "https://www.google.co.jp/*"
   ]
 }

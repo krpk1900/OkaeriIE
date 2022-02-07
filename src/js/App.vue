@@ -1,37 +1,42 @@
 <template>
   <div id="myapp">
+    <div style="height: 10em;"></div>
+    <!-- div class="VueStar__icon" style="height: 100px; margin-top: 60px; color: darkgray;"を追加する-->
     <div style="height: 3em;">
       <vue-star animate="animated rubberBand" color="#F05654">
         <i slot="icon" class="fa fa-heart" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <div style="height: 3em;">
+    <div style="height: 3em;"></div>
+    <div style="height: 5em;">
       <vue-star animate="animated shake" color="#5654F0">
         <i slot="icon" class="fa fa-thumbs-up" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <div style="height: 3em;">
+    <div style="height: 3em;"></div>
+    <div style="height: 5em;">
       <vue-star animate="animated rubberBand" color="#00bfff">
         <i slot="icon" class="fa fa-internet-explorer" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <div style="height: 3em;">
+    <div style="height: 3em;"></div>
+    <div style="height: 5em;">
       <vue-star animate="animated rubberBand" color="#87cefa">
         <i slot="icon" class="fa fa-snowflake" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <div style="height: 3em;">
+    <div style="height: 3em;"></div>
+    <div style="height: 5em;">
       <vue-star animate="animated rubberBand" color="#ffff00">
         <i slot="icon" class="fa fa-moon" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <div style="height: 3em;">
+    <div style="height: 3em;"></div>
+    <div style="height: 5em;">
       <vue-star animate="animated rubberBand" color="#ffd700">
         <i slot="icon" class="fa fa-star" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
-    <!-- CSSのみで星 -->
-    <div style="height: 3em;" class="heart">aaa</div>
   </div>
 </template>
 
@@ -42,6 +47,20 @@ export default {
   name: "app",
   components: {
     VueStar
+  },
+  date: {
+    isColored: true,
+    styleObject: {
+      color: 'red',
+      fontWeight: 'bold'
+    }
+  },
+  methods: {
+    toggeleIsColored: function() {
+      this.isColored = !this.isColored;
+      console.log(this.isColored);
+      //this.color = "red";
+    }
   },
   mounted: function(){
     window.addEventListener('scroll', function(){
@@ -73,6 +92,10 @@ export default {
 </script>
 
 <style scoped>
+  .darkgray {
+    color: darkgray !important;
+  }
+
   .VueStar__icon .fa {
     font-size: 3em;
     cursor: pointer;
