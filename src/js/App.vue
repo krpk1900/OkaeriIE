@@ -2,6 +2,12 @@
   <div id="myapp">
     <div style="height: 10em;"></div>
     <!-- div class="VueStar__icon" style="height: 100px; margin-top: 60px; color: darkgray;"を追加する-->
+    <div style="height: 5em;">
+      <vue-star animate="animated rubberBand" color="#ffd700">
+        <i slot="icon" class="fa fa-star" style="font-size: 3em; cursor: pointer;"></i>
+      </vue-star>
+    </div>
+    <div style="height: 3em;"></div>
     <div style="height: 3em;">
       <vue-star animate="animated rubberBand" color="#F05654">
         <i slot="icon" class="fa fa-heart" style="font-size: 3em; cursor: pointer;"></i>
@@ -29,12 +35,6 @@
     <div style="height: 5em;">
       <vue-star animate="animated rubberBand" color="#ffff00">
         <i slot="icon" class="fa fa-moon" style="font-size: 3em; cursor: pointer;"></i>
-      </vue-star>
-    </div>
-    <div style="height: 3em;"></div>
-    <div style="height: 5em;">
-      <vue-star animate="animated rubberBand" color="#ffd700">
-        <i slot="icon" class="fa fa-star" style="font-size: 3em; cursor: pointer;"></i>
       </vue-star>
     </div>
   </div>
