@@ -5,7 +5,8 @@
 	"content_scripts": [
     {
       "matches": [
-        "https://www.google.co.jp/*"
+        "https://www.google.co.jp/*",
+        "https://blog-imgs-47-origin.fc2.com/p/r/o/prokuma/blackBg.html"
       ],
       "js": [
         "js/chunk-vendors.js",
@@ -22,6 +23,7 @@
   ],
   "permissions": [
     "activeTab",
-    "https://www.google.co.jp/*"
+    "https://www.google.co.jp/*",
+    "https://blog-imgs-47-origin.fc2.com/p/r/o/prokuma/blackBg.html"
   ]
 }
